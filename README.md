@@ -1,6 +1,6 @@
 # reverse-slashes package
 
-Replaces direction of slashes in selected text.
+Reverses direction of slashes in selected text.
 
 ![Image inserted by Atom editor package auto-host-markdown-image](http://i.imgur.com/1JBUJjc.gif?delhash=j4iiVtMdThLpPlk)
 
