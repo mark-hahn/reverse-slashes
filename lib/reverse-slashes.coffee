@@ -1,7 +1,7 @@
 
 module.exports =
   activate: ->
-    atom.workspaceView.command "reverse-slashes:toggle", -> 
+    @sub = atom.commands.add 'atom-text-editor', 'reverse-slashes:toggle': =>
       if (editor = atom.workspace.getActiveTextEditor())
         text = editor.getSelectedText()
         ranges = editor.getSelectedBufferRanges()
@@ -12,4 +12,7 @@ module.exports =
             text.replace /\\/g, '/'
         )
         editor.setSelectedBufferRanges ranges
+        
+  deactivate: ->
+    @sub.dispose()
         
