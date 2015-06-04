@@ -1,9 +1,11 @@
 {
   "name": "reverse-slashes",
   "main": "./lib/reverse-slashes",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Replaces direction of slashes in selected text.",
-  "activationEvents": ["reverse-slashes:toggle"],
+  "activationCommands": {
+    "atom-text-editor": ["reverse-slashes:toggle"]
+  },
   "repository": "https://github.com/mark-hahn/reverse-slashes",
   "license": "MIT",
   "engines": {
